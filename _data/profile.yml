@@ -21,7 +21,7 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  I am a fifth-year Ph.D. student in Computer Science at <a href="https://www.cs.purdue.edu/"><strong>Purdue University</strong></a>, advised by <a href="https://www.cs.purdue.edu/homes/chjung/"><strong>Prof. Changhee Jung</strong></a>.
+  I am a fifth-year Ph.D. candidate in Computer Science at <a href="https://www.cs.purdue.edu/"><strong>Purdue University</strong></a>, advised by <a href="https://www.cs.purdue.edu/homes/chjung/"><strong>Prof. Changhee Jung</strong></a>.
 
   Before that, I received my Master's degree from <a href="https://english.pku.edu.cn/"><strong>Peking University</strong></a>, advised by <a href="https://cs.pku.edu.cn/info/1235/2118.htm"><strong>Prof. Xianhua Liu</strong></a> at <a href="https://cs.pku.edu.cn/info/1165/1840.htm"><strong>MPRC</strong></a>, and my Bachelor's degree from <a href="https://en.dlut.edu.cn/"><strong>Dalian University of Technology</strong></a>.
   </p>
