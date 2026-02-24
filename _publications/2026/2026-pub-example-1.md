@@ -12,7 +12,7 @@ abstract:
 cover:          /assets/images/covers/anchor.png
 authors:
   - Yuchen Zhou
-	- Jianping Zeng
+  - Jianping Zeng
   - Changhee Jung
 
 links:
