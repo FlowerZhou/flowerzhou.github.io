@@ -2,7 +2,7 @@
 title:          "Anchoring Whole-System Persistence and Resilience in CXL"
 date:           2026-02-24 00:01:00 +0800
 selected:       true
-pub:            "the 40th ACM International Conference on Supercomputing (ICS 2026),"
+pub:            "40th ACM International Conference on Supercomputing (ICS),"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 #pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
