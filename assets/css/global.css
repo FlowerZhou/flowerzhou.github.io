@@ -196,7 +196,7 @@ body {
 .hero-copy h1 {
     color: var(--site-ink);
     font-family: "Raleway", "Lato", sans-serif;
-    font-size: clamp(2.35rem, 5vw, 4.25rem);
+    font-size: clamp(1.9rem, 3.4vw, 3rem);
     font-weight: 700;
     line-height: 1.02;
     margin: 0;
@@ -358,6 +358,17 @@ h6.border-bottom i,
     font-weight: 700 !important;
 }
 
+.my-3.p-0.bg-white .row.no-gutters h5,
+.my-0.p-0.bg-white .row.no-gutters h5 {
+    font-size: 1.08rem;
+    line-height: 1.28;
+}
+
+.my-3.p-0.bg-white .row.no-gutters p,
+.my-0.p-0.bg-white .row.no-gutters p {
+    max-width: 64rem;
+}
+
 .text-muted {
     color: var(--site-muted) !important;
 }
@@ -449,7 +460,7 @@ h2[id^="year-"] {
     }
 
     .hero-copy h1 {
-        font-size: 2.05rem;
+        font-size: 1.75rem;
     }
 
     .hero-actions a {
