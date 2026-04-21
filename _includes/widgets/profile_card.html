@@ -1,26 +1,24 @@
-<section class="profile-masthead">
-    <div class="profile-main">
-        <div class="profile-label">Systems / Architecture / Compilers</div>
-        <h1>{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></h1>
+<section class="terminal-hero">
+    <aside class="terminal-identity">
+        {% if site.data.profile.portrait_url %}
+        <a class="terminal-portrait" target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
+            <img
+                src="{{ site.data.profile.portrait_url | relative_url }}"
+                alt="Portrait"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="{{ site.data.profile.portrait_caption }}">
+        </a>
+        {% endif %}
 
-        <div class="profile-position">
-            {% for position in site.data.profile.positions %}
-            <div>
-                {% if position.logo -%}
-                <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
-                {%- endif %}
-                {{ position.name }}
-            </div>
-            {% endfor %}
+        <div class="terminal-status">
+            <span></span>
+            Available for research conversations
         </div>
 
-        <div class="profile-bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
-            {{ site.data.profile.short_bio }}
-        </div>
-
-        <div class="profile-links">
+        <div class="terminal-links">
             <a href="mailto:{{ site.data.profile.email | encode_email }}">
-                <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                <i class="fas fa-at"></i> Email
             </a>
 
             {% if site.data.profile.cv_link %}
@@ -33,7 +31,7 @@
             {%- else -%}
             {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
             {%- endif -%}
-            <a target="_blank" href="{{ gscholar_url }}"><i class="fab fa-google-scholar"></i> Google Scholar</a>
+            <a target="_blank" href="{{ gscholar_url }}"><i class="fab fa-google-scholar"></i> Scholar</a>
             {% endif %}
 
             {% if site.data.profile.github %}
@@ -56,31 +54,43 @@
             <a target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}"><i class="fab fa-orcid"></i> ORCID</a>
             {% endif %}
         </div>
-    </div>
+    </aside>
 
-    <aside class="profile-side">
-        {% if site.data.profile.portrait_url %}
-        <a class="portrait-frame" target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
-            <img
-                src="{{ site.data.profile.portrait_url | relative_url }}"
-                alt="Portrait"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="{{ site.data.profile.portrait_caption }}">
-        </a>
-        {% endif %}
+    <div class="terminal-panel">
+        <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <code>research-profile</code>
+        </div>
 
-        <div class="research-focus">
-            <div class="focus-title">Research Focus</div>
-            <div class="focus-list">
+        <div class="terminal-body">
+            <div class="terminal-kicker">Computer Systems Researcher</div>
+            <h1>{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></h1>
+
+            <div class="terminal-position">
+                {% for position in site.data.profile.positions %}
+                <div>
+                    {% if position.logo -%}
+                    <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                    {%- endif %}
+                    {{ position.name }}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="terminal-bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                {{ site.data.profile.short_bio }}
+            </div>
+
+            <div class="terminal-tags">
                 <span>Reliable systems</span>
-                <span>High-performance architecture</span>
-                <span>Compiler co-design</span>
+                <span>Compiler-architecture co-design</span>
                 <span>CXL / CPU / GPU</span>
-                <span>Energy-harvesting ML</span>
+                <span>Energy-aware ML</span>
             </div>
         </div>
-    </aside>
+    </div>
 </section>
 
 {% if site.data.profile.wechat_qrcode %}
