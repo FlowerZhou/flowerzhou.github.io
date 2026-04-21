@@ -4,7 +4,7 @@ navbar_name: "Yuchen Zhou"
 
 positions:
 - logo: /assets/images/badges/purdue.png  # Logo is optional
-  name: Ph.D. Student at Purdue University
+  name: Ph.D. Candidate at Purdue University
 
 
 email: "zhou1166@purdue.edu"
@@ -45,7 +45,7 @@ education:
   logo: /assets/images/badges/purdue.png
   position: >- 
     Department of Computer Science <br/>
-    Ph.D. Student
+    Ph.D. Candidate
   date: Sep. 2021 - present
 - name: Peking University
   logo: /assets/images/badges/PKU_red.png
