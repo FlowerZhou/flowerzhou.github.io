@@ -232,42 +232,11 @@ div.lazy {
     background: linear-gradient(90deg, var(--accent), var(--gold));
 }
 
-.profile-hero-row {
-    margin-top: 0.6rem;
-}
-
-.profile-hero {
-    background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.82) 54%, rgba(31, 122, 140, 0.09) 100%) !important;
-}
-
-.profile-hero .card-body::before {
-    height: 5px;
-}
-
-.profile-copy {
-    padding: 3rem 3.25rem 2.25rem;
-}
-
-.profile-kicker {
-    color: var(--gold);
-    font-family: "Raleway", "Lato", sans-serif;
-    font-size: 0.76rem;
-    font-weight: 900;
-    letter-spacing: 0;
-    margin-bottom: 0.55rem;
-    text-transform: uppercase;
-}
-
 .h1.font-weight-normal {
     font-size: clamp(1.65rem, 3vw, 2.45rem);
     font-weight: 900 !important;
     line-height: 1.02;
     margin-bottom: 0.35rem;
-}
-
-.profile-name {
-    max-width: 32rem;
 }
 
 .h1 small {
@@ -284,58 +253,6 @@ div.lazy {
     padding: 0.35rem;
 }
 
-.profile-portrait-column {
-    align-items: stretch;
-    padding: 1.35rem 1.35rem 1.35rem 0;
-}
-
-.profile-portrait-panel {
-    align-items: center;
-    background:
-        linear-gradient(160deg, rgba(15, 76, 92, 0.95), rgba(31, 122, 140, 0.78) 56%, rgba(201, 147, 40, 0.72));
-    border-radius: 0.8rem;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 18px 42px rgba(15, 76, 92, 0.22);
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-    overflow: hidden;
-    padding: 1.25rem;
-    position: relative;
-}
-
-.profile-portrait-panel::before {
-    border: 1px solid rgba(255, 255, 255, 0.23);
-    border-radius: 0.65rem;
-    content: "";
-    inset: 0.65rem;
-    pointer-events: none;
-    position: absolute;
-}
-
-.profile-portrait {
-    aspect-ratio: 1 / 1;
-    border: 5px solid rgba(255, 255, 255, 0.82);
-    border-radius: 50%;
-    box-shadow: 0 20px 46px rgba(0, 0, 0, 0.24);
-    height: auto;
-    max-width: 210px;
-    object-fit: cover;
-    width: 78%;
-    z-index: 1;
-}
-
-.profile-caption {
-    color: rgba(255, 255, 255, 0.82);
-    font-size: 0.78rem;
-    line-height: 1.35;
-    margin-top: 1rem;
-    max-width: 14rem;
-    text-align: center;
-    z-index: 1;
-}
-
 hr {
     border-color: var(--line);
 }
@@ -347,14 +264,7 @@ hr {
     border-radius: 999px;
 }
 
-.profile-contact-strip {
-    background: rgba(255, 255, 255, 0.46);
-    border-top: 1px solid var(--line);
-    padding: 0.85rem 3.25rem;
-}
-
-.card-body > .row:last-child a,
-.profile-contact-strip a {
+.card-body > .row:last-child a {
     background: rgba(31, 122, 140, 0.08);
     color: var(--accent-dark);
     font-weight: 700;
@@ -363,7 +273,6 @@ hr {
 }
 
 .card-body > .row:last-child a:hover,
-.profile-contact-strip a:hover,
 .abstract-links a:hover {
     background: var(--accent-soft);
     box-shadow: 0 8px 20px rgba(31, 122, 140, 0.13);
@@ -378,49 +287,6 @@ h6.border-bottom,
     font-size: 0.95rem;
     font-weight: 800;
     letter-spacing: 0;
-}
-
-.profile-details-card .card-body {
-    padding: 2rem !important;
-}
-
-.profile-details-card h6 {
-    align-items: center;
-    color: var(--accent-dark);
-    display: flex;
-    font-size: 0.82rem;
-    font-weight: 900;
-    margin-bottom: 0.85rem;
-    text-transform: uppercase;
-}
-
-.profile-details-card h6::after {
-    background: linear-gradient(90deg, rgba(31, 122, 140, 0.24), transparent);
-    content: "";
-    flex: 1;
-    height: 1px;
-    margin-left: 0.8rem;
-}
-
-.profile-details-card .media,
-.profile-details-card .list li {
-    background: rgba(255, 255, 255, 0.54);
-    border: 1px solid var(--line);
-    border-radius: 0.6rem;
-    margin-bottom: 0.55rem !important;
-    padding: 0.65rem;
-}
-
-.profile-details-card .media img {
-    background: #fff;
-    border-radius: 0.35rem;
-    box-shadow: 0 4px 12px rgba(23, 32, 51, 0.08);
-    padding: 0.12rem;
-}
-
-.profile-details-card em {
-    color: var(--muted);
-    font-size: 0.78rem;
 }
 
 h6.border-bottom i,
@@ -452,7 +318,6 @@ h2[id^="year-"]::after {
 .row.no-gutters.border-bottom:hover,
 .row.no-gutters.border-gray:hover {
     background-color: rgba(255, 255, 255, 0.58);
-    transform: translateX(2px);
 }
 
 .row.no-gutters img.lazy,
@@ -501,14 +366,6 @@ h2[id^="year-"]::after {
 
     .card-body {
         padding: 2rem !important;
-    }
-
-    .profile-copy {
-        padding: 2rem 1.4rem 1.5rem;
-    }
-
-    .profile-contact-strip {
-        padding: 0.8rem 1.4rem 1rem;
     }
 
     .h1.font-weight-normal {
