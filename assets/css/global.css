@@ -105,7 +105,11 @@ div.lazy {
 }
 
 body {
-    background: #f6f4ef !important;
+    background:
+        radial-gradient(circle at 8% 10%, rgba(49, 92, 72, 0.16), transparent 24rem),
+        radial-gradient(circle at 92% 4%, rgba(184, 101, 69, 0.14), transparent 26rem),
+        linear-gradient(180deg, #f6f1e9 0%, #ebe2d5 100%) !important;
+    background-attachment: fixed;
     color: var(--site-ink);
     line-height: 1.65;
 }
@@ -241,6 +245,7 @@ body {
 }
 
 .hero-actions a,
+.hero-action-placeholder,
 .abstract-links a {
     align-items: center;
     background: #ffffff;
@@ -252,6 +257,11 @@ body {
     gap: 0.38rem;
     line-height: 1.2;
     padding: 0.48rem 0.78rem;
+}
+
+.hero-action-placeholder {
+    color: var(--site-muted);
+    cursor: default;
 }
 
 .hero-actions a:hover,
