@@ -233,7 +233,7 @@ div.lazy {
 }
 
 .h1.font-weight-normal {
-    font-size: clamp(1.85rem, 3.8vw, 3rem);
+    font-size: clamp(1.65rem, 3vw, 2.45rem);
     font-weight: 900 !important;
     line-height: 1.02;
     margin-bottom: 0.35rem;
@@ -369,7 +369,7 @@ h2[id^="year-"]::after {
     }
 
     .h1.font-weight-normal {
-        font-size: 1.9rem;
+        font-size: 1.65rem;
     }
 
     .card-body > .row:last-child a {
