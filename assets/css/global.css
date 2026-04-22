@@ -545,6 +545,219 @@ h2[id^="year-"] {
     color: var(--site-green);
 }
 
+.showcase-card {
+    background: rgba(255, 250, 244, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: 24px;
+    box-shadow: var(--site-shadow);
+    min-height: 100%;
+    overflow: hidden;
+    padding: 1.35rem;
+}
+
+.showcase h1,
+.container-xl > h1 {
+    color: var(--site-green);
+    font-family: "Raleway", "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1.1rem 0 0.4rem;
+}
+
+.showcase-hero-card {
+    background:
+        linear-gradient(135deg, rgba(49, 92, 72, 0.96), rgba(80, 121, 87, 0.88)),
+        var(--site-green);
+    color: #fffaf4;
+    min-height: 300px;
+}
+
+.showcase-kicker {
+    color: rgba(255, 250, 244, 0.7);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.showcase-hero-content h2 {
+    color: #fffaf4;
+    font-family: "Raleway", "Lato", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.02;
+    margin: 0.75rem 0 1rem;
+    max-width: 40rem;
+}
+
+.showcase-hero-content p {
+    color: rgba(255, 250, 244, 0.78);
+    font-size: 1.02rem;
+    max-width: 44rem;
+}
+
+.showcase-chip-row,
+.mini-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.showcase-chip-row span,
+.mini-tags span {
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.32rem 0.58rem;
+}
+
+.showcase-chip-row span {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.platform-stack-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.platform-stack {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem 0 1.4rem;
+    width: 100%;
+}
+
+.platform-node {
+    align-items: center;
+    border-radius: 50%;
+    color: #fffaf4;
+    display: flex;
+    font-weight: 700;
+    height: 68px;
+    justify-content: center;
+    width: 68px;
+}
+
+.platform-node.cpu {
+    background: var(--site-green);
+}
+
+.platform-node.cxl {
+    background: var(--site-clay);
+}
+
+.platform-node.gpu {
+    background: #2f5f8f;
+}
+
+.platform-link {
+    background: linear-gradient(90deg, var(--site-green), var(--site-clay));
+    height: 3px;
+    width: 38px;
+}
+
+.platform-caption h3,
+.research-tile h3,
+.pipeline-card h3,
+.matrix-card h3 {
+    color: var(--site-ink);
+    font-family: "Raleway", "Lato", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.platform-caption p,
+.research-tile p,
+.pipeline-card p {
+    color: var(--site-muted);
+    margin-bottom: 0;
+}
+
+.research-tile i {
+    color: var(--site-green);
+    font-size: 1.6rem;
+    margin-bottom: 0.85rem;
+}
+
+.research-tile .mini-tags {
+    margin-top: 1rem;
+}
+
+.mini-tags span {
+    background: var(--site-sage);
+    color: var(--site-green);
+}
+
+.accent-tile {
+    background: #f4f8ff;
+}
+
+.accent-tile i {
+    color: #2f5f8f;
+}
+
+.energy-tile {
+    background: #fff7e8;
+}
+
+.energy-tile i {
+    color: var(--site-gold);
+}
+
+.pipeline {
+    display: grid;
+    gap: 0.55rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 1rem 0;
+}
+
+.pipeline div {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--site-line);
+    border-radius: 16px;
+    color: var(--site-green);
+    font-weight: 700;
+    padding: 0.8rem;
+}
+
+.pipeline span {
+    background: var(--site-green);
+    border-radius: 50%;
+    color: #fffaf4;
+    display: inline-flex;
+    height: 1.55rem;
+    justify-content: center;
+    margin-right: 0.35rem;
+    width: 1.55rem;
+}
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.matrix-grid div {
+    border-bottom: 1px solid var(--site-line);
+    color: var(--site-muted);
+    font-size: 0.86rem;
+    font-weight: 700;
+    padding: 0.55rem;
+}
+
+.matrix-grid div:nth-child(-n+4) {
+    color: var(--site-green);
+}
+
+.matrix-grid .mark {
+    color: var(--site-clay);
+    font-size: 1rem;
+    text-align: center;
+}
+
 .footer {
     color: var(--site-muted);
     padding: 1.4rem 0 1.9rem;
@@ -566,6 +779,10 @@ h2[id^="year-"] {
 
     .profile-details-grid {
         grid-template-columns: 1fr;
+    }
+
+    .pipeline {
+        grid-template-columns: 1fr 1fr;
     }
 
     .snapshot-heading,
