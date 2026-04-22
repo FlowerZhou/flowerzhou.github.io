@@ -328,8 +328,7 @@ body {
     padding: 0.34rem 0.62rem;
 }
 
-.research-snapshot,
-.featured-paper {
+.research-snapshot {
     background: rgba(255, 250, 244, 0.86);
     border: 1px solid rgba(255, 255, 255, 0.74);
     border-radius: 24px;
@@ -348,8 +347,7 @@ body {
     padding-bottom: 1rem;
 }
 
-.snapshot-heading span,
-.featured-label {
+.snapshot-heading span {
     color: var(--site-clay);
     font-family: "Raleway", "Lato", sans-serif;
     font-size: 0.78rem;
@@ -357,11 +355,10 @@ body {
     text-transform: uppercase;
 }
 
-.snapshot-heading h2,
-.featured-paper h2 {
+.snapshot-heading h2 {
     color: var(--site-ink);
     font-family: "Raleway", "Lato", sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.12rem;
     font-weight: 700;
     line-height: 1.3;
     margin: 0;
@@ -399,64 +396,6 @@ body {
     font-size: 0.9rem;
     line-height: 1.55;
     margin: 0;
-}
-
-.featured-paper {
-    background: var(--site-green);
-    color: #fffaf4;
-}
-
-.featured-paper .featured-label {
-    color: rgba(255, 250, 244, 0.72);
-    margin-bottom: 0.7rem;
-}
-
-.featured-content {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: minmax(0, 1fr) auto;
-}
-
-.featured-paper h2 {
-    color: #fffaf4;
-    font-size: 1.55rem;
-}
-
-.featured-authors,
-.featured-venue,
-.featured-abstract {
-    color: rgba(255, 250, 244, 0.78);
-    margin-bottom: 0.25rem;
-}
-
-.featured-authors a,
-.featured-authors .text-body {
-    color: #fffaf4 !important;
-}
-
-.featured-actions {
-    align-items: end;
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-    justify-content: end;
-}
-
-.featured-actions a {
-    align-items: center;
-    background: #fffaf4;
-    border-radius: 999px;
-    color: var(--site-green);
-    display: inline-flex;
-    font-weight: 700;
-    gap: 0.4rem;
-    padding: 0.5rem 0.8rem;
-    white-space: nowrap;
-}
-
-.featured-actions a:hover {
-    background: var(--site-sage);
-    color: var(--site-green);
 }
 
 h6.border-bottom,
@@ -630,17 +569,12 @@ h2[id^="year-"] {
     }
 
     .snapshot-heading,
-    .snapshot-grid,
-    .featured-content {
+    .snapshot-grid {
         grid-template-columns: 1fr;
     }
 
     .snapshot-grid {
         gap: 0.7rem;
-    }
-
-    .featured-actions {
-        align-items: flex-start;
     }
 }
 
