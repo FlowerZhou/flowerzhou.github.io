@@ -328,76 +328,6 @@ body {
     padding: 0.34rem 0.62rem;
 }
 
-.research-snapshot {
-    background: rgba(255, 250, 244, 0.86);
-    border: 1px solid rgba(255, 255, 255, 0.74);
-    border-radius: 24px;
-    box-shadow: var(--site-shadow);
-    margin-top: 1rem;
-    padding: 1.35rem;
-}
-
-.snapshot-heading {
-    align-items: end;
-    border-bottom: 1px solid var(--site-line);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 190px minmax(0, 1fr);
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-}
-
-.snapshot-heading span {
-    color: var(--site-clay);
-    font-family: "Raleway", "Lato", sans-serif;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.snapshot-heading h2 {
-    color: var(--site-ink);
-    font-family: "Raleway", "Lato", sans-serif;
-    font-size: 1.12rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.snapshot-grid {
-    display: grid;
-    gap: 0.85rem;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.snapshot-item {
-    background: rgba(255, 255, 255, 0.54);
-    border: 1px solid var(--site-line);
-    border-radius: 18px;
-    padding: 1rem;
-}
-
-.snapshot-item i {
-    color: var(--site-green);
-    font-size: 1.1rem;
-    margin-bottom: 0.65rem;
-}
-
-.snapshot-item h3 {
-    color: var(--site-ink);
-    font-family: "Raleway", "Lato", sans-serif;
-    font-size: 0.98rem;
-    font-weight: 700;
-    margin-bottom: 0.45rem;
-}
-
-.snapshot-item p {
-    color: var(--site-muted);
-    font-size: 0.9rem;
-    line-height: 1.55;
-    margin: 0;
-}
-
 h6.border-bottom,
 .my-3.bg-white > h6 {
     align-items: center;
@@ -445,6 +375,27 @@ h6.border-bottom i,
 .my-3.p-0.bg-white .row.no-gutters p,
 .my-0.p-0.bg-white .row.no-gutters p {
     max-width: 64rem;
+}
+
+.publication-venue {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.28rem;
+}
+
+.top-tier-badge {
+    background: linear-gradient(135deg, var(--site-clay), var(--site-gold));
+    border-radius: 999px;
+    color: #fffaf4;
+    display: inline-flex;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 0.22rem 0.46rem;
+    text-transform: uppercase;
+    vertical-align: 0.08rem;
 }
 
 .text-muted {
@@ -785,14 +736,6 @@ h2[id^="year-"] {
         grid-template-columns: 1fr 1fr;
     }
 
-    .snapshot-heading,
-    .snapshot-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .snapshot-grid {
-        gap: 0.7rem;
-    }
 }
 
 @media (max-width: 767.98px) {
